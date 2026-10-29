@@ -1,0 +1,275 @@
+
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #151515;
+    color: white;
+}
+header {
+    background-color: #080808;
+    padding: 15px;
+    text-align: center;
+}
+.logo {
+    color: white;
+    font-size: 30px;
+}
+.logo span {
+    color: #e50914;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+nav a:hover {
+    color: #e50914;
+}
+.banner {
+    background-color: #390b12;
+    background-image: linear-gradient(
+        to right, #170609, #7d101b
+    );
+    padding: 80px 20px;
+    text-align: center;
+}
+.banner h2 {
+    font-size: 35px;
+}
+.banner p {
+    color: #dddddd;
+}
+.button {
+    display: inline-block;
+    background-color: #e50914;
+    color: white;
+    padding: 12px 22px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: #b20710;
+}
+.section {
+    padding: 35px 5%;
+    text-align: center;
+}
+.section h2 {
+    color: #ffca5c;
+    font-size: 28px;
+}
+.genre-list {
+    color: #dddddd;
+    line-height: 2;
+    font-size: large;
+}
+.movie-list {
+    text-align: center;
+}
+.movie-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 260px;
+    margin: 12px;
+    padding: 15px;
+    background-color: #242424;
+    border: 1px solid #414141;
+    border-radius: 8px;
+    text-align: left;
+}
+.movie-card:hover {
+    border-color: #e50914;
+}
+.movie-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.movie-card h3 {
+    color: #ffca5c;
+}
+.movie-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.genre {
+    color: #cccccc;
+}
+.rating {
+    color: #ffca5c;
+    font-weight: bold;
+}
+.reviews {
+    background-color: #202020;
+}
+.review-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    margin: 12px;
+    padding: 20px;
+    background-color: #303030;
+    border-radius: 8px;
+}
+.review-card h3 {
+    color: #ffca5c;
+}
+.review-card p {
+    line-height: 1.6;
+}
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    color: #dddddd;
+}
+footer {
+    background-color: #080808;
+    padding: 25px;
+    text-align: center;
+}
+footer h3 {
+    color: #e50914;
+}
+footer p {
+    color: #cccccc;
+    font-size: 14px;
+}
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+    .banner h2 {
+        font-size: 27px;
+    }
+    .movie-card,
+    .review-card {
+        width: 100%;
+        max-width: 320px;
+        margin: 10px auto;
+        display: block;
+    }
+    .section {
+        padding: 25px 15px;
+    }
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #151515;
+    color: white;
+}
+.genres {
+    padding: 40px 20px;
+    text-align: center;
+}
+.genres h1 {
+    color: #ffca5c;
+    font-size: 35px;
+}
+.genres p {
+    color: #dddddd;
+}
+.genre-container {
+    margin-top: 30px;
+}
+.genre-card {
+    display: inline-block;
+    width: 250px;
+    height: 160px;
+    margin: 12px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    overflow: hidden;
+}
+.genre-card h2 {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 15px;
+    margin-top: 55px;
+    color: white;
+}
+.action {
+    background-image: url("https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80");
+}
+.comedy {
+    background-image: url("https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=600&q=80");
+}
+.romance {
+    background-image: url("https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=600&q=80");
+}
+.thriller {
+    background-image: url("https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80");
+}
+.scifi {
+    background-image: url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=600&q=80");
+}
+.horror {
+    background-image: url("https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&w=600&q=80");
+}
+.genre-card:hover {
+    opacity: 0.8;
+}
+@media (max-width: 600px) {
+    .genre-card {
+        width: 90%;
+    }
+}
+.about {
+    background-color: #151515;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+.about h1 {
+    color: #ffca5c;
+    font-size: 36px;
+}
+.intro {
+    font-size: 20px;
+    color: #ff4d4d;
+}
+.about-box {
+    background-color: #252525;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 700px;
+    border-radius: 10px;
+    border-left: 5px solid #ff4d4d;
+    text-align: left;
+}
+.about-box h2 {
+    color: #ffca5c;
+}
+.about-box p,
+.about-box li {
+    color: #dddddd;
+    line-height: 1.7;
+}
+.about-box ul {
+    padding-left: 25px;
+}
+.home-btn {
+    display: inline-block;
+    background-color: #ff4d4d;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.home-btn:hover {
+    background-color: #cc3333;
+}
+
